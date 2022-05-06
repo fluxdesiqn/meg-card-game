@@ -1,0 +1,26 @@
+.content {
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+.game, #message, .winner {
+    display: none;
+}
+h1, h2, h3, p {
+    text-align: center;
+}
+img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.winner {
+    display: flex;
+    flex-wrap: wrap;
+}
