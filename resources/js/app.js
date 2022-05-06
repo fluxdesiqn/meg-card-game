@@ -79,6 +79,16 @@ window.onload = function(){
             score.innerHTML = response.data['score'];
             message.innerHTML = response.data['msg'];
             message.style.display = "block";
+
+            if(response.data['won'] == true) {
+                const winnerCards = response.data['all_cards'];
+                var imgs = winnerCards.map(function(winnerCard) {
+                    var img = new Image();
+                    img.src = '/img/' + winnerCard + '.png';
+                    winner.appendChild(img);
+                    return img;
+                });
+            }
         })
     };
     
